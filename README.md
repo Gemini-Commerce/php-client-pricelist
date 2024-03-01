@@ -49,41 +49,47 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+// Configure API key authorization: Authorization
+$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $body = new \GeminiCommerce\Pricelist\Model\PricelistCreatePriceListRequest(); // \GeminiCommerce\Pricelist\Model\PricelistCreatePriceListRequest
 
 try {
-    $result = $apiInstance->priceListCreatePriceList($body);
+    $result = $apiInstance->createPriceList($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling PriceListApi->priceListCreatePriceList: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling PriceListApi->createPriceList: ', $e->getMessage(), PHP_EOL;
 }
 
 ```
 
 ## API Endpoints
 
-All URIs are relative to *http://localhost*
+All URIs are relative to *https://pricelist.api.gogemini.io*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*PriceListApi* | [**priceListCreatePriceList**](docs/Api/PriceListApi.md#pricelistcreatepricelist) | **POST** /pricelist.PriceList/CreatePriceList | 
-*PriceListApi* | [**priceListDeletePriceListItems**](docs/Api/PriceListApi.md#pricelistdeletepricelistitems) | **POST** /pricelist.PriceList/DeletePriceListItems | 
-*PriceListApi* | [**priceListGetFullPriceItemsByPricelistId**](docs/Api/PriceListApi.md#pricelistgetfullpriceitemsbypricelistid) | **POST** /pricelist.PriceList/GetFullPriceItemsByPricelistId | 
+*PriceListApi* | [**createPriceList**](docs/Api/PriceListApi.md#createpricelist) | **POST** /pricelist.PriceList/CreatePriceList | Create new list
+*PriceListApi* | [**deletePriceListItems**](docs/Api/PriceListApi.md#deletepricelistitems) | **POST** /pricelist.PriceList/DeletePriceListItems | Get prices for items
+*PriceListApi* | [**getFullPriceItemsByPricelistId**](docs/Api/PriceListApi.md#getfullpriceitemsbypricelistid) | **POST** /pricelist.PriceList/GetFullPriceItemsByPricelistId | List detailed items
+*PriceListApi* | [**getPriceList**](docs/Api/PriceListApi.md#getpricelist) | **POST** /pricelist.PriceList/GetPriceList | Get specific list
+*PriceListApi* | [**getPriceListByCode**](docs/Api/PriceListApi.md#getpricelistbycode) | **POST** /pricelist.PriceList/GetPriceListByCode | Get list by code
+*PriceListApi* | [**getPriceListItems**](docs/Api/PriceListApi.md#getpricelistitems) | **POST** /pricelist.PriceList/GetPriceListItems | Get items in list
+*PriceListApi* | [**getPricesItems**](docs/Api/PriceListApi.md#getpricesitems) | **POST** /pricelist.PriceList/GetPricesItems | Get detailed items
+*PriceListApi* | [**listFullPriceItemsByPricelistId**](docs/Api/PriceListApi.md#listfullpriceitemsbypricelistid) | **POST** /pricelist.PriceList/ListFullPriceItemsByPricelistId | List detailed price items for a specific price list
+*PriceListApi* | [**listPriceLists**](docs/Api/PriceListApi.md#listpricelists) | **POST** /pricelist.PriceList/ListPriceLists | List all price lists
 *PriceListApi* | [**priceListGetPriceItemsByPriceListItemIds**](docs/Api/PriceListApi.md#pricelistgetpriceitemsbypricelistitemids) | **POST** /pricelist.PriceList/GetPriceItemsByPriceListItemIds | 
-*PriceListApi* | [**priceListGetPriceList**](docs/Api/PriceListApi.md#pricelistgetpricelist) | **POST** /pricelist.PriceList/GetPriceList | 
-*PriceListApi* | [**priceListGetPriceListByCode**](docs/Api/PriceListApi.md#pricelistgetpricelistbycode) | **POST** /pricelist.PriceList/GetPriceListByCode | 
-*PriceListApi* | [**priceListGetPriceListItems**](docs/Api/PriceListApi.md#pricelistgetpricelistitems) | **POST** /pricelist.PriceList/GetPriceListItems | 
-*PriceListApi* | [**priceListGetPricesItems**](docs/Api/PriceListApi.md#pricelistgetpricesitems) | **POST** /pricelist.PriceList/GetPricesItems | 
-*PriceListApi* | [**priceListListFullPriceItemsByPricelistId**](docs/Api/PriceListApi.md#pricelistlistfullpriceitemsbypricelistid) | **POST** /pricelist.PriceList/ListFullPriceItemsByPricelistId | 
-*PriceListApi* | [**priceListListPriceLists**](docs/Api/PriceListApi.md#pricelistlistpricelists) | **POST** /pricelist.PriceList/ListPriceLists | 
-*PriceListApi* | [**priceListSetPriceListItems**](docs/Api/PriceListApi.md#pricelistsetpricelistitems) | **POST** /pricelist.PriceList/SetPriceListItems | 
-*PriceListApi* | [**priceListUpdatePriceList**](docs/Api/PriceListApi.md#pricelistupdatepricelist) | **POST** /pricelist.PriceList/UpdatePriceList | 
+*PriceListApi* | [**setPriceListItems**](docs/Api/PriceListApi.md#setpricelistitems) | **POST** /pricelist.PriceList/SetPriceListItems | Set items in list
+*PriceListApi* | [**updatePriceList**](docs/Api/PriceListApi.md#updatepricelist) | **POST** /pricelist.PriceList/UpdatePriceList | Update list
 
 ## Models
 
@@ -133,7 +139,21 @@ Class | Method | HTTP request | Description
 - [RpcStatus](docs/Model/RpcStatus.md)
 
 ## Authorization
-Endpoints do not require authorization.
+
+Authentication schemes defined for the API:
+### Authorization
+
+- **Type**: API key
+- **API key parameter name**: Authorization
+- **Location**: HTTP header
+
+
+### standardAuthorization
+
+- **Type**: `OAuth`
+- **Flow**: `implicit`
+- **Authorization URL**: ``
+- **Scopes**: N/A
 
 ## Tests
 
@@ -146,12 +166,12 @@ vendor/bin/phpunit
 
 ## Author
 
-
+info@gemini-commerce.com
 
 ## About this package
 
 This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: `version not set`
-    - Package version: `1.1.0`
+- API version: `v1`
+    - Package version: `1.1.1`
 - Build package: `org.openapitools.codegen.languages.PhpClientCodegen`

@@ -1,12 +1,12 @@
 # # PricelistCurrency
 Stands for Albania, not all ;-)
 
-## Properties
+## Properties 
 
 
 
 | Value |
------------- |
+------------ | 
 XXX|&#39;XXX&#39;
 ALL|&#39;ALL&#39;
 DZD|&#39;DZD&#39;
@@ -187,3 +187,4 @@ XSU|&#39;XSU&#39;
 USN|&#39;USN&#39;
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
+
