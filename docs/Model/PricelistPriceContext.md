@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**currency**| [**\GeminiCommerce\Pricelist\Model\PricelistCurrency**](PricelistCurrency.md) |  for more information please, see Model/PricelistCurrency.php  |
+**currency**| [**\OpenAPI\Client\Model\PricelistCurrency**](PricelistCurrency.md) |  for more information please, see Model/PricelistCurrency.php  |
 **segment**| **string** |   | [optional]
 **segments**| **string[]** |   | [optional]
 **market**| **string** |   | [optional]

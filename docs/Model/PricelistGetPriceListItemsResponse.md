@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**items**| [**\GeminiCommerce\Pricelist\Model\PricelistGetPriceListItem[]**](PricelistGetPriceListItem.md) |   | [optional]
+**items**| [**\OpenAPI\Client\Model\PricelistGetPriceListItem[]**](PricelistGetPriceListItem.md) |   | [optional]
 **next_page_token**| **string** |   | [optional]
 
 

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **description**| **string** |   | [optional]
 **is_active**| **bool** |   | [optional]
 **is_default**| **bool** |   | [optional]
-**currency**| [**\GeminiCommerce\Pricelist\Model\PricelistCurrency**](PricelistCurrency.md) |  for more information please, see Model/PricelistCurrency.php  | [optional]
+**currency**| [**\OpenAPI\Client\Model\PricelistCurrency**](PricelistCurrency.md) |  for more information please, see Model/PricelistCurrency.php  | [optional]
 **vat_included**| **bool** |   | [optional]
 **delivered_duty_paid**| **bool** |   | [optional]
 **segments**| **string[]** |   | [optional]
@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **channels**| **string[]** |   | [optional]
 **created_at**| **\DateTime** |   | [optional]
 **updated_at**| **\DateTime** |   | [optional]
-**type**| [**\GeminiCommerce\Pricelist\Model\PricelistPriceListType**](PricelistPriceListType.md) |  for more information please, see Model/PricelistPriceListType.php  | [optional]
+**type**| [**\OpenAPI\Client\Model\PricelistPriceListType**](PricelistPriceListType.md) |  for more information please, see Model/PricelistPriceListType.php  | [optional]
 **is_system**| **bool** |   | [optional]
 
 

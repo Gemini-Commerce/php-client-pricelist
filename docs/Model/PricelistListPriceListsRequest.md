@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **page_token**| **string** |   | [optional]
 **search_query**| **string** |   | [optional]
 **filter_mask**| **string** |   | [optional]
-**filter**| [**\GeminiCommerce\Pricelist\Model\ListPriceListsRequestFilter**](ListPriceListsRequestFilter.md) |   | [optional]
+**filter**| [**\OpenAPI\Client\Model\ListPriceListsRequestFilter**](ListPriceListsRequestFilter.md) |   | [optional]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

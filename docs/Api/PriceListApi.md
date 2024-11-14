@@ -1,4 +1,4 @@
-# GeminiCommerce\Pricelist\PriceListApi
+# OpenAPI\Client\PriceListApi
 
 All URIs are relative to https://pricelist.api.gogemini.io, except if the operation defines another base path.
 
@@ -21,7 +21,7 @@ All URIs are relative to https://pricelist.api.gogemini.io, except if the operat
 ## `createPriceList()`
 
 ```php
-createPriceList($body): \GeminiCommerce\Pricelist\Model\PricelistCreatePriceListResponse
+createPriceList($body): \OpenAPI\Client\Model\PricelistCreatePriceListResponse
 ```
 
 Create new list
@@ -36,18 +36,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
+$apiInstance = new OpenAPI\Client\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Pricelist\Model\PricelistCreatePriceListRequest(); // \GeminiCommerce\Pricelist\Model\PricelistCreatePriceListRequest
+$body = new \OpenAPI\Client\Model\PricelistCreatePriceListRequest(); // \OpenAPI\Client\Model\PricelistCreatePriceListRequest
 
 try {
     $result = $apiInstance->createPriceList($body);
@@ -61,11 +61,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Pricelist\Model\PricelistCreatePriceListRequest**](../Model/PricelistCreatePriceListRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PricelistCreatePriceListRequest**](../Model/PricelistCreatePriceListRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Pricelist\Model\PricelistCreatePriceListResponse**](../Model/PricelistCreatePriceListResponse.md)
+[**\OpenAPI\Client\Model\PricelistCreatePriceListResponse**](../Model/PricelistCreatePriceListResponse.md)
 
 ### Authorization
 
@@ -98,18 +98,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
+$apiInstance = new OpenAPI\Client\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Pricelist\Model\PricelistDeletePriceListItemsRequest(); // \GeminiCommerce\Pricelist\Model\PricelistDeletePriceListItemsRequest
+$body = new \OpenAPI\Client\Model\PricelistDeletePriceListItemsRequest(); // \OpenAPI\Client\Model\PricelistDeletePriceListItemsRequest
 
 try {
     $result = $apiInstance->deletePriceListItems($body);
@@ -123,7 +123,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Pricelist\Model\PricelistDeletePriceListItemsRequest**](../Model/PricelistDeletePriceListItemsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PricelistDeletePriceListItemsRequest**](../Model/PricelistDeletePriceListItemsRequest.md)|  | |
 
 ### Return type
 
@@ -145,7 +145,7 @@ try {
 ## `getFullPriceItemsByPricelistId()`
 
 ```php
-getFullPriceItemsByPricelistId($body): \GeminiCommerce\Pricelist\Model\PricelistGetFullPriceItemsResponse
+getFullPriceItemsByPricelistId($body): \OpenAPI\Client\Model\PricelistGetFullPriceItemsResponse
 ```
 
 List detailed items
@@ -160,18 +160,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
+$apiInstance = new OpenAPI\Client\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Pricelist\Model\PricelistGetFullPriceItemsRequest(); // \GeminiCommerce\Pricelist\Model\PricelistGetFullPriceItemsRequest
+$body = new \OpenAPI\Client\Model\PricelistGetFullPriceItemsRequest(); // \OpenAPI\Client\Model\PricelistGetFullPriceItemsRequest
 
 try {
     $result = $apiInstance->getFullPriceItemsByPricelistId($body);
@@ -185,11 +185,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Pricelist\Model\PricelistGetFullPriceItemsRequest**](../Model/PricelistGetFullPriceItemsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PricelistGetFullPriceItemsRequest**](../Model/PricelistGetFullPriceItemsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Pricelist\Model\PricelistGetFullPriceItemsResponse**](../Model/PricelistGetFullPriceItemsResponse.md)
+[**\OpenAPI\Client\Model\PricelistGetFullPriceItemsResponse**](../Model/PricelistGetFullPriceItemsResponse.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ try {
 ## `getPriceList()`
 
 ```php
-getPriceList($body): \GeminiCommerce\Pricelist\Model\PricelistGetPriceListResponse
+getPriceList($body): \OpenAPI\Client\Model\PricelistGetPriceListResponse
 ```
 
 Get specific list
@@ -222,18 +222,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
+$apiInstance = new OpenAPI\Client\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Pricelist\Model\PricelistGetPriceListRequest(); // \GeminiCommerce\Pricelist\Model\PricelistGetPriceListRequest
+$body = new \OpenAPI\Client\Model\PricelistGetPriceListRequest(); // \OpenAPI\Client\Model\PricelistGetPriceListRequest
 
 try {
     $result = $apiInstance->getPriceList($body);
@@ -247,11 +247,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Pricelist\Model\PricelistGetPriceListRequest**](../Model/PricelistGetPriceListRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PricelistGetPriceListRequest**](../Model/PricelistGetPriceListRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Pricelist\Model\PricelistGetPriceListResponse**](../Model/PricelistGetPriceListResponse.md)
+[**\OpenAPI\Client\Model\PricelistGetPriceListResponse**](../Model/PricelistGetPriceListResponse.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ try {
 ## `getPriceListByCode()`
 
 ```php
-getPriceListByCode($body): \GeminiCommerce\Pricelist\Model\PricelistGetPriceListByCodeResponse
+getPriceListByCode($body): \OpenAPI\Client\Model\PricelistGetPriceListByCodeResponse
 ```
 
 Get list by code
@@ -284,18 +284,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
+$apiInstance = new OpenAPI\Client\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Pricelist\Model\PricelistGetPriceListByCodeRequest(); // \GeminiCommerce\Pricelist\Model\PricelistGetPriceListByCodeRequest
+$body = new \OpenAPI\Client\Model\PricelistGetPriceListByCodeRequest(); // \OpenAPI\Client\Model\PricelistGetPriceListByCodeRequest
 
 try {
     $result = $apiInstance->getPriceListByCode($body);
@@ -309,11 +309,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Pricelist\Model\PricelistGetPriceListByCodeRequest**](../Model/PricelistGetPriceListByCodeRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PricelistGetPriceListByCodeRequest**](../Model/PricelistGetPriceListByCodeRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Pricelist\Model\PricelistGetPriceListByCodeResponse**](../Model/PricelistGetPriceListByCodeResponse.md)
+[**\OpenAPI\Client\Model\PricelistGetPriceListByCodeResponse**](../Model/PricelistGetPriceListByCodeResponse.md)
 
 ### Authorization
 
@@ -331,7 +331,7 @@ try {
 ## `getPriceListItems()`
 
 ```php
-getPriceListItems($body): \GeminiCommerce\Pricelist\Model\PricelistGetPriceListItemsResponse
+getPriceListItems($body): \OpenAPI\Client\Model\PricelistGetPriceListItemsResponse
 ```
 
 Get items in list
@@ -346,18 +346,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
+$apiInstance = new OpenAPI\Client\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Pricelist\Model\PricelistGetPriceListItemsRequest(); // \GeminiCommerce\Pricelist\Model\PricelistGetPriceListItemsRequest
+$body = new \OpenAPI\Client\Model\PricelistGetPriceListItemsRequest(); // \OpenAPI\Client\Model\PricelistGetPriceListItemsRequest
 
 try {
     $result = $apiInstance->getPriceListItems($body);
@@ -371,11 +371,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Pricelist\Model\PricelistGetPriceListItemsRequest**](../Model/PricelistGetPriceListItemsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PricelistGetPriceListItemsRequest**](../Model/PricelistGetPriceListItemsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Pricelist\Model\PricelistGetPriceListItemsResponse**](../Model/PricelistGetPriceListItemsResponse.md)
+[**\OpenAPI\Client\Model\PricelistGetPriceListItemsResponse**](../Model/PricelistGetPriceListItemsResponse.md)
 
 ### Authorization
 
@@ -393,7 +393,7 @@ try {
 ## `getPricesItems()`
 
 ```php
-getPricesItems($body): \GeminiCommerce\Pricelist\Model\PricelistGetPricesResponse
+getPricesItems($body): \OpenAPI\Client\Model\PricelistGetPricesResponse
 ```
 
 Get detailed items
@@ -408,18 +408,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
+$apiInstance = new OpenAPI\Client\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Pricelist\Model\PricelistGetPricesRequest(); // \GeminiCommerce\Pricelist\Model\PricelistGetPricesRequest
+$body = new \OpenAPI\Client\Model\PricelistGetPricesRequest(); // \OpenAPI\Client\Model\PricelistGetPricesRequest
 
 try {
     $result = $apiInstance->getPricesItems($body);
@@ -433,11 +433,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Pricelist\Model\PricelistGetPricesRequest**](../Model/PricelistGetPricesRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PricelistGetPricesRequest**](../Model/PricelistGetPricesRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Pricelist\Model\PricelistGetPricesResponse**](../Model/PricelistGetPricesResponse.md)
+[**\OpenAPI\Client\Model\PricelistGetPricesResponse**](../Model/PricelistGetPricesResponse.md)
 
 ### Authorization
 
@@ -455,7 +455,7 @@ try {
 ## `listFullPriceItemsByPricelistId()`
 
 ```php
-listFullPriceItemsByPricelistId($body): \GeminiCommerce\Pricelist\Model\PricelistListFullPriceItemsResponse
+listFullPriceItemsByPricelistId($body): \OpenAPI\Client\Model\PricelistListFullPriceItemsResponse
 ```
 
 List detailed price items for a specific price list
@@ -470,18 +470,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
+$apiInstance = new OpenAPI\Client\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Pricelist\Model\PricelistListFullPriceItemsRequest(); // \GeminiCommerce\Pricelist\Model\PricelistListFullPriceItemsRequest
+$body = new \OpenAPI\Client\Model\PricelistListFullPriceItemsRequest(); // \OpenAPI\Client\Model\PricelistListFullPriceItemsRequest
 
 try {
     $result = $apiInstance->listFullPriceItemsByPricelistId($body);
@@ -495,11 +495,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Pricelist\Model\PricelistListFullPriceItemsRequest**](../Model/PricelistListFullPriceItemsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PricelistListFullPriceItemsRequest**](../Model/PricelistListFullPriceItemsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Pricelist\Model\PricelistListFullPriceItemsResponse**](../Model/PricelistListFullPriceItemsResponse.md)
+[**\OpenAPI\Client\Model\PricelistListFullPriceItemsResponse**](../Model/PricelistListFullPriceItemsResponse.md)
 
 ### Authorization
 
@@ -517,7 +517,7 @@ try {
 ## `listPriceLists()`
 
 ```php
-listPriceLists($body): \GeminiCommerce\Pricelist\Model\PricelistListPriceListsResponse
+listPriceLists($body): \OpenAPI\Client\Model\PricelistListPriceListsResponse
 ```
 
 List all price lists
@@ -532,18 +532,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
+$apiInstance = new OpenAPI\Client\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Pricelist\Model\PricelistListPriceListsRequest(); // \GeminiCommerce\Pricelist\Model\PricelistListPriceListsRequest
+$body = new \OpenAPI\Client\Model\PricelistListPriceListsRequest(); // \OpenAPI\Client\Model\PricelistListPriceListsRequest
 
 try {
     $result = $apiInstance->listPriceLists($body);
@@ -557,11 +557,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Pricelist\Model\PricelistListPriceListsRequest**](../Model/PricelistListPriceListsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PricelistListPriceListsRequest**](../Model/PricelistListPriceListsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Pricelist\Model\PricelistListPriceListsResponse**](../Model/PricelistListPriceListsResponse.md)
+[**\OpenAPI\Client\Model\PricelistListPriceListsResponse**](../Model/PricelistListPriceListsResponse.md)
 
 ### Authorization
 
@@ -579,7 +579,7 @@ try {
 ## `priceListGetPriceItemsByPriceListItemIds()`
 
 ```php
-priceListGetPriceItemsByPriceListItemIds($body): \GeminiCommerce\Pricelist\Model\PricelistGetPriceItemsByPriceListItemIdsResponse
+priceListGetPriceItemsByPriceListItemIds($body): \OpenAPI\Client\Model\PricelistGetPriceItemsByPriceListItemIdsResponse
 ```
 
 
@@ -592,18 +592,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
+$apiInstance = new OpenAPI\Client\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Pricelist\Model\PricelistGetPriceItemsByPriceListItemIdsRequest(); // \GeminiCommerce\Pricelist\Model\PricelistGetPriceItemsByPriceListItemIdsRequest
+$body = new \OpenAPI\Client\Model\PricelistGetPriceItemsByPriceListItemIdsRequest(); // \OpenAPI\Client\Model\PricelistGetPriceItemsByPriceListItemIdsRequest
 
 try {
     $result = $apiInstance->priceListGetPriceItemsByPriceListItemIds($body);
@@ -617,11 +617,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Pricelist\Model\PricelistGetPriceItemsByPriceListItemIdsRequest**](../Model/PricelistGetPriceItemsByPriceListItemIdsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PricelistGetPriceItemsByPriceListItemIdsRequest**](../Model/PricelistGetPriceItemsByPriceListItemIdsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Pricelist\Model\PricelistGetPriceItemsByPriceListItemIdsResponse**](../Model/PricelistGetPriceItemsByPriceListItemIdsResponse.md)
+[**\OpenAPI\Client\Model\PricelistGetPriceItemsByPriceListItemIdsResponse**](../Model/PricelistGetPriceItemsByPriceListItemIdsResponse.md)
 
 ### Authorization
 
@@ -639,7 +639,7 @@ try {
 ## `setPriceListItems()`
 
 ```php
-setPriceListItems($body): \GeminiCommerce\Pricelist\Model\PricelistSetPriceListItemsResponse
+setPriceListItems($body): \OpenAPI\Client\Model\PricelistSetPriceListItemsResponse
 ```
 
 Set items in list
@@ -654,18 +654,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
+$apiInstance = new OpenAPI\Client\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Pricelist\Model\PricelistSetPriceListItemsRequest(); // \GeminiCommerce\Pricelist\Model\PricelistSetPriceListItemsRequest
+$body = new \OpenAPI\Client\Model\PricelistSetPriceListItemsRequest(); // \OpenAPI\Client\Model\PricelistSetPriceListItemsRequest
 
 try {
     $result = $apiInstance->setPriceListItems($body);
@@ -679,11 +679,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Pricelist\Model\PricelistSetPriceListItemsRequest**](../Model/PricelistSetPriceListItemsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PricelistSetPriceListItemsRequest**](../Model/PricelistSetPriceListItemsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Pricelist\Model\PricelistSetPriceListItemsResponse**](../Model/PricelistSetPriceListItemsResponse.md)
+[**\OpenAPI\Client\Model\PricelistSetPriceListItemsResponse**](../Model/PricelistSetPriceListItemsResponse.md)
 
 ### Authorization
 
@@ -716,18 +716,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Pricelist\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Pricelist\Api\PriceListApi(
+$apiInstance = new OpenAPI\Client\Api\PriceListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Pricelist\Model\PricelistUpdatePriceListRequest(); // \GeminiCommerce\Pricelist\Model\PricelistUpdatePriceListRequest
+$body = new \OpenAPI\Client\Model\PricelistUpdatePriceListRequest(); // \OpenAPI\Client\Model\PricelistUpdatePriceListRequest
 
 try {
     $result = $apiInstance->updatePriceList($body);
@@ -741,7 +741,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Pricelist\Model\PricelistUpdatePriceListRequest**](../Model/PricelistUpdatePriceListRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\PricelistUpdatePriceListRequest**](../Model/PricelistUpdatePriceListRequest.md)|  | |
 
 ### Return type
 

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **tenant_id**| **string** |   | [optional]
 **id**| **string** |   | [optional]
-**payload**| [**\GeminiCommerce\Pricelist\Model\PricelistUpdatePriceListRequestPayload**](PricelistUpdatePriceListRequestPayload.md) |   | [optional]
+**payload**| [**\OpenAPI\Client\Model\PricelistUpdatePriceListRequestPayload**](PricelistUpdatePriceListRequestPayload.md) |   | [optional]
 **payload_mask**| **string** |   | [optional]
 
 
